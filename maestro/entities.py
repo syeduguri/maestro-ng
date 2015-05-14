@@ -364,6 +364,7 @@ class Container(Entity):
 
         # Network mode
         self.network_mode = config.get('net')
+        self.pid_mode = config.get('pid')
 
         # Restart policy
         self.restart_policy = self._parse_restart_policy(config.get('restart'))

@@ -221,6 +221,7 @@ class StartTask(Task):
             port_bindings=ports,
             privileged=self.container.privileged,
             network_mode=self.container.network_mode,
+            pid_mode=self.container.pid_mode,
             restart_policy=self.container.restart_policy,
             dns=self.container.dns,
             links=self.container.links,
